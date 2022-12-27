@@ -22,3 +22,12 @@ jobs:
       run: npm install
     - name: npm build
       run: npm run build
+    - name: Setup pages
+      uses: actions/configure-pages@v2
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: '.'
+    - name: Deploy to github pages
+      id: deployment
+      uses: actions/deploy-pages@v1
