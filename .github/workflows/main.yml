@@ -13,12 +13,12 @@ jobs:
     - uses: actions/checkout@master
       with: 
         persist-credentials: false
-    - name: Use Node.js ${{ matrix.node_version }}
+    - name: Use Node.js 16
       uses: actions/setup-node@master
       with:
-        node-version: 12
+        node-version: 16
 
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build
+    - name: npm install
+      run: npm install
+    - name: npm build
+      run: npm run build
