@@ -1,11 +1,19 @@
 name: Github Page with Sveltekit
 
+permissions:
+  pages: write
+  contents: read
+  id-token: write
+
 on:
   push:
     branches:
       - main
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     name: Deploy with node 12 and ubuntu-latest
     runs-on: ubuntu-latest
 
