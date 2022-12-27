@@ -1,0 +1,16 @@
+name: Github Page with Sveltekit
+
+on:
+	push:
+		branches:
+			- main
+jobs:
+	deploy:
+		runs-on: ubuntu-latest
+		steps: 
+			- uses: actions/checkout@master
+			- uses: actions/setup-node@latest
+				with:
+					node-version: 12
+			- run: npm ci
+			- run: npm run build
