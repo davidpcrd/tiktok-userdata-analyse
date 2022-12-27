@@ -1,1 +1,6 @@
-<h1>This is a other page <a href="/">back</a></h1>
+<script>
+
+	import { base } from "$app/paths";
+
+</script>
+<h1>This is a other page <a href="{base}/">back</a></h1>
