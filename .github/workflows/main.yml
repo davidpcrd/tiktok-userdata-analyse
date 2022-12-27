@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@master
     - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@latest
+      uses: actions/setup-node@master
       with:
         node-version: 12
 
