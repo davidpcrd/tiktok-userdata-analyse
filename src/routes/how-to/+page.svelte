@@ -1,0 +1,1 @@
+<h1>This is a other page <a href="/">back</a></h1>

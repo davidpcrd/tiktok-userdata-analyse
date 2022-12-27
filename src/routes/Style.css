@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /*
+    https://dribbble.com/shots/3627180-Free-Dark-Light-Data-Visualization-UI-Kit/attachments/809743?mode=media
+    */
+    --primary-background-color: #212528;
+    --second-background-color: #393F44;
+    --second-border-color: #2E3137;
+
+    --primary-text-color: #fff;
+    --second-text-color: #cecece;
+
+    --main-color: #4DD8D9;
+
+    font-family: 'Poppins', sans-serif;
+
+
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
